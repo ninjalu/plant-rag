@@ -1,0 +1,20 @@
+ipykernel
+selenium
+chromedriver_autoinstaller
+langchain
+# langchain-openai
+# langchain-nomic
+langchain_ollama
+langchain_chroma
+streamlit
+python_dotenv
+langchain_community
+langserve
+fastapi
+uvicorn
+sse_starlette
+chromadb
+faiss-cpu
+nomic[local]
+wikipedia
+webdriver_manager
