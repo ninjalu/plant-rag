@@ -52,17 +52,16 @@ for url in all_urls:
         # Extract the .mp3 link
         mp3_link = mp3_element.get_attribute("href")
 
-        file_name = url.split("/")[-1]
+        file_name = mp3_link.split("/")[-1] + ".mp3"
         file_path = os.path.join(mp3_dir, file_name)
         try:
             # Send a GET request to download the file
-            response = requests.get(url, stream=True)
+            response = requests.get(mp3_link)
             response.raise_for_status()  # Check if the request was successful
 
             # Save the file
             with open(file_path, "wb") as file:
-                for chunk in response.iter_content(chunk_size=8192):
-                    file.write(chunk)
+                file.write(response.content)
 
             print(f"Downloaded {file_name}")
 

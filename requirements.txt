@@ -2,8 +2,6 @@ ipykernel
 selenium
 chromedriver_autoinstaller
 langchain
-# langchain-openai
-# langchain-nomic
 langchain_ollama
 langchain_chroma
 streamlit
@@ -18,3 +16,13 @@ faiss-cpu
 nomic[local]
 wikipedia
 webdriver_manager
+openai-whisper
+torch
+git+https://github.com/openai/whisper.git
+neo4j-graphrag
+pygraphviz
+neo4j
+langchain_groq
+uvicorn
+fastapi
+python-multipart
